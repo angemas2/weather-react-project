@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
@@ -14,6 +15,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       city: response.data.name,
+      date:new Date(response.data.dt*1000),
     });
   }
 
@@ -21,7 +23,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <h1>Real Time Weather</h1>
-        <h3>Last Updated : May,25 21:21</h3>
+        <h3><FormattedDate date={weather.date}/></h3>
         <form className="searchForm mt-5">
           <input
             type="text"
