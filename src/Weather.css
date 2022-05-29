@@ -35,6 +35,7 @@ ul.currentDetails {
   padding: 10px 30px;
   margin-right: 15px;
   width: 300px;
+  color: white;
 }
 
 form ::placeholder {
