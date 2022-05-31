@@ -8,6 +8,10 @@ ul.currentDetails {
   padding: 0px;
 }
 
+ .tempdesc h4{
+    font-size: 40px;
+}
+
 .currentWeather {
   max-width: 640px;
 }
@@ -36,6 +40,10 @@ ul.currentDetails {
   margin-right: 15px;
   width: 300px;
   color: white;
+}
+
+.cityInput:focus{
+   outline-color: white;
 }
 
 form ::placeholder {
@@ -73,6 +81,11 @@ form ::placeholder {
   line-height: 1.4;
 }
 
+.canvas{
+    position: relative;
+    top:20px;
+}
+
 @media (max-width: 960px) {
   .searchBtn {
     margin-top: 10px;
@@ -91,9 +104,14 @@ form ::placeholder {
   li {
     font-size: 12px;
   }
-
-  h1,
-  h3 {
+ .tempdesc h4{
+      text-align: left;
+      font-size: 40px;
+  }
+ 
+ h1,h3 {
     text-align: center;
   }
+
+ 
 }
