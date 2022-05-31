@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
-import Formatteddate from "./Formatteddate";
+import FormattedDate from "./FormattedDate";
 import Weatherdata from "./Weatherdata";
 
 export default function Weather(props) {
@@ -41,7 +41,7 @@ export default function Weather(props) {
       <div className="Weather">
         <h1>Real Time Weather</h1>
         <h3>
-          <Formatteddate date={weather.date} />
+          <FormattedDate date={weather.date} />
         </h3>
         <form className="searchForm mt-5" onSubmit={handleSearch}>
           <input
