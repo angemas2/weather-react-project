@@ -38,7 +38,7 @@ form ::placeholder {
 }
 
 .cityInput {
-  background: rgb(147, 140, 224, 0.8);
+  background: rgb(226, 228, 255, 0.2);;
   border: none;
   border-radius: 20px;
   padding: 10px 30px;
@@ -63,7 +63,7 @@ form ::placeholder {
 }
 
 .currentWeather {
-  background: rgb(147, 140, 224, 0.8);
+  background: rgb(226, 228, 255, 0.2);
   border-radius: 20px;
   border: none;
   padding: 30px 40px 30px 40px;
