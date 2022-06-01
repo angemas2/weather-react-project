@@ -43,7 +43,7 @@ export default function Weather(props) {
         <h3>
           <FormattedDate date={weather.date} />
         </h3>
-        <form className="searchForm mt-5" onSubmit={handleSearch}>
+        <form className="searchForm mt-4 mt-md-5" onSubmit={handleSearch}>
           <input
             type="text"
             placeholder="Enter a city"

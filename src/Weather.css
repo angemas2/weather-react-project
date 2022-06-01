@@ -119,11 +119,11 @@ form ::placeholder {
  .tempdesc h4{
       text-align: left;
       font-size: 40px;
+      line-height: 1.2px;
   }
  
  h1,h3 {
     text-align: center;
   }
-
  
 }
