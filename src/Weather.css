@@ -12,6 +12,11 @@ ul.currentDetails {
     font-size: 40px;
 }
 
+form ::placeholder {
+  color: white;
+}
+
+
 .currentWeather {
   max-width: 640px;
 }
@@ -46,9 +51,7 @@ ul.currentDetails {
    outline-color: white;
 }
 
-form ::placeholder {
-  color: white;
-}
+
 
 .searchBtn {
   color: #8d88d9;
@@ -99,12 +102,21 @@ form ::placeholder {
 
 
 @media (max-width: 960px) {
+      li {
+    font-size: 12px;
+  }
+
+  h1,h3 {
+    text-align: center;
+  }
+
   .searchBtn {
     margin-top: 10px;
     width: 100%;
   }
   .cityInput {
     width: 100%;
+    text-align: center;
   }
   .cityInput::placeholder {
     text-align: center;
@@ -113,17 +125,11 @@ form ::placeholder {
     margin: 10% 50px auto;
   }
 
-  li {
-    font-size: 12px;
-  }
  .tempdesc h4{
       text-align: left;
       font-size: 40px;
       line-height: 1.2px;
   }
  
- h1,h3 {
-    text-align: center;
-  }
  
 }
