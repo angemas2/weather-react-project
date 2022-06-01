@@ -86,6 +86,18 @@ form ::placeholder {
     top:20px;
 }
 
+.units{
+    font-size: 12px;
+    position: relative;
+    top:-28px;
+    margin-left: 5px;
+}
+
+.currentTemp a{
+    color: #4c57b5fc;
+}
+
+
 @media (max-width: 960px) {
   .searchBtn {
     margin-top: 10px;

@@ -1,5 +1,6 @@
 import React from "react";
 import Weathericon from "./Weathericon";
+import Units from "./Units";
 
 
 
@@ -9,7 +10,7 @@ export default function Weatherdata(props){
         <div class="row">
           <div class="col tempdesc">
             <h4>{props.data.city}</h4>
-            <div className="currentTemp">{Math.round(props.data.temp)}°C</div>
+            <Units celsius={props.data.temp} />
             <div className="currentDesc text-capitalize">
               {props.data.description}
             </div>
