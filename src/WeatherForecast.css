@@ -17,7 +17,7 @@
 }
 
 
-@media(max-width:960px){
+@media(max-width:760px){
    .dailyForecast-card{
        font-size: 11px;
        margin: 0px 4px;  
