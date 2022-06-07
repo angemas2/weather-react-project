@@ -19,7 +19,7 @@ export default function Weatherdata(props){
             <Weathericon code={props.data.icon} size={125} />
           </div>
         </div>
-        <ul className="currentDetails mt-md-4 mb-0">
+        <ul className="currentDetails mt-3 mt-md-4 mb-0">
           <li>
             <i class="fa-solid fa-droplet"></i> {props.data.humidity}%
           </li>
