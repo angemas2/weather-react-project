@@ -28,12 +28,13 @@ useEffect(()=>{
             >
               <DailyForecast forecast={dailyData} />
             </div>
-          );}
+          );} else{return null;}
           
         })}
       </div>
     );
   } else {
+
     let apiKey = "c0ed04c902a245721bb289e92dca75fe";
     let lon = props.coordinates.lon;
     let lat = props.coordinates.lat;
