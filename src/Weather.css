@@ -8,14 +8,13 @@ ul.currentDetails {
   padding: 0px;
 }
 
- .tempdesc h4{
-    font-size: 40px;
+.tempdesc h4 {
+  font-size: 40px;
 }
 
 form ::placeholder {
   color: white;
 }
-
 
 .currentWeather {
   max-width: 640px;
@@ -38,7 +37,7 @@ form ::placeholder {
 }
 
 .cityInput {
-  background: rgb(226, 228, 255, 0.2);;
+  background: rgb(226, 228, 255, 0.2);
   border: none;
   border-radius: 20px;
   padding: 10px 30px;
@@ -47,11 +46,9 @@ form ::placeholder {
   color: white;
 }
 
-.cityInput:focus{
-   outline-color: white;
+.cityInput:focus {
+  outline-color: white;
 }
-
-
 
 .searchBtn {
   color: #8d88d9;
@@ -84,31 +81,46 @@ form ::placeholder {
   line-height: 1.4;
 }
 
-.canvas{
-    position: relative;
-    top:20px;
+.canvas {
+  position: relative;
+  top: 20px;
 }
 
-.units{
-    font-size: 12px;
-    position: relative;
-    top:-28px;
-    margin-left: 5px;
+.units {
+  font-size: 12px;
+  position: relative;
+  top: -28px;
+  margin-left: 5px;
 }
 
-.currentTemp a{
-    color: #4c57b5fc;
+.currentTemp a {
+  color: #4c57b5fc;
 }
-
 
 @media (max-width: 960px) {
-      li {
+  li {
     font-size: 12px;
   }
 
-  h1,h3 {
+  h1,
+  h3 {
     text-align: center;
   }
+
+.Weather h1 {
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.Weather h3 {
+  font-size: 14px;
+ 
+}
+
+.currentTemp {
+  font-size: 40px;
+  font-weight: 700;
+}
 
   .searchBtn {
     margin-top: 10px;
@@ -125,16 +137,14 @@ form ::placeholder {
     margin: 10% 50px auto;
   }
 
- .tempdesc h4{
-      text-align: left;
-      font-size: 40px;
-      line-height: 1.2px;
+  .tempdesc h4 {
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.2px;
   }
- 
-  .Weather {
-  margin: 10% 3%;
-  color: white;
-}
 
- 
+  .Weather {
+    margin: 10% 3%;
+    color: white;
+  }
 }
