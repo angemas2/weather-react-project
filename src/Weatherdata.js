@@ -16,7 +16,7 @@ export default function Weatherdata(props){
             </div>
           </div>
           <div class="col canvas">
-            <Weathericon code={props.data.icon} />
+            <Weathericon code={props.data.icon} size={125} />
           </div>
         </div>
         <ul className="currentDetails mt-4 mb-0">

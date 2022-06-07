@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import Weatherdata from "./Weatherdata";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
@@ -18,6 +19,7 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
+      coordinates:response.data.coord
     });
   }
 
@@ -54,6 +56,7 @@ export default function Weather(props) {
           <input type="submit" value="Search" className="searchBtn" />
         </form>
         <Weatherdata data={weather} />
+        <WeatherForecast coordinates={weather.coordinates}/>
       </div>
     );
   } else {
