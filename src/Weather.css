@@ -139,12 +139,30 @@ form ::placeholder {
 
   .tempdesc h4 {
     text-align: left;
-    font-size: 30px;
-    line-height: 1.2px;
+    font-size: 20px;
+    margin-bottom: 3px;
   }
+
+.currentDesc{
+  font-size: 14px;
+  font-weight: lighter;
+}
 
   .Weather {
     margin: 10% 3%;
     color: white;
   }
+
+  .units {
+  font-size: 12px;
+  position: relative;
+  top: -20px;
+  margin-left: 5px;
+}
+
+.canvas {
+  position: relative;
+  top: -10px;
+}
+
 }
