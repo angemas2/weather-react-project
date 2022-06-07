@@ -47,7 +47,8 @@ form ::placeholder {
 }
 
 .cityInput:focus {
-  outline-color: white;
+  outline:none;
+  border: 1px solid white;
 }
 
 .searchBtn {

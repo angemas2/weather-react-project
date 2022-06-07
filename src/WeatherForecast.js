@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./WeatherForecast.css";
 import DailyForecast from "./DailyForecast";
 
@@ -11,6 +11,10 @@ export default function WeatherForecast(props) {
     setLoaded(true);
     setData(response.data.daily);
   }
+
+useEffect(()=>{
+  setLoaded(false);
+},[props.coordinates])
 
   if (loaded) {
   
